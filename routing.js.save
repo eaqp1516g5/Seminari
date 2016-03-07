@@ -1,0 +1,20 @@
+var http = require('http');
+http.createServer(function(req,res){
+
+var path = req.url.replace(/\/?(?:\?.*)?$/, '').toLowerCase();
+switch(path) {
+case '':
+res.writeHead(200, { 'Content-Type': 'text/plain' });
+res.end('Inici');
+break;
+case '/profile':
+res.writeHead(200, { 'Content-Type': 'text/plain' });
+res.end('Perfil d\'usuari');
+break;
+default:
+res.writeHead(404, { 'Content-Type': 'text/plain' });
+res.end('La pàgina sol·licitada no es troba disponible');
+break;
+}
+}).listen(3000);
+co0000000000000000nsole.log('Server started on localhost:3000; press Ctrl-C to terminate....');
