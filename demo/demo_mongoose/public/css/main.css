@@ -1,0 +1,67 @@
+body{
+	font-family: 'Lato', sans-serif;
+}
+img{
+	width: 100%;
+}
+.quitar-float{
+	float: none;
+}
+.margen-arriba{
+	margin-top: 100px;
+}
+.pacifico{
+	font-family: 'Pacifico', cursive;
+}
+.grande{
+	font-size: 4em;
+}
+.verde{
+	color: #44734D
+}
+.mediano{
+	font-size: 1.5em;
+}
+.mediano-2{
+	font-size: 0.75em;
+}
+.no-lista li{ /* Dentro de no-lista busca elementos li. */
+list-style-type: none; /* quita los puntos de enumeracion */
+}
+.no-lista{
+	margin: 0px; /* margen en la parte de arriba*/
+	padding: 0px; /* padding en la parte de la izquierda */
+}
+.espacio-derecha{
+	margin-right: 1em;
+}
+a,.azul{
+	color: #009FFF
+}
+.se-gris{
+	background-color: #eee;
+}
+.retraso-1{ /*funcion para retrasar animación*/
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	animation-delay: 1s;
+}
+.retraso-2{ /*funcion para retrasar animación*/
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+	animation-delay: 2s;
+}
+.retraso-mediosegundo{ /*funcion para retrasar animación*/
+	-webkit-animation-delay: 0.5s;
+	-moz-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+}
+.padding-largo{
+	padding: 5px 10px;
+}
+.inline-block{ /*con float y inline-block, son reglas de css que nos permite poner un 
+elemnto al lado del otro la diferencia esta en que el display reconoce el centrado, 
+puede centrar horizontalmente y con float no(se puede pero haciendo otras cosas). */
+	float: none;
+	display: inline-block;
+}

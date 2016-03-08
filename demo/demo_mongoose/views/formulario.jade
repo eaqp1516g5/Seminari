@@ -1,0 +1,22 @@
+doctype html
+html(lang="es")
+	head
+		title Formulario
+		meta(charset="utf-8")
+		link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet")
+	body
+		div(class="col-md-5 center-block quitar-float margen-arriba text-left")
+			h1 Formulario demo
+			form(action="/formulario" method="POST" style="margin-top:1.5em;" enctye="multipart/form-data")
+				div(class="form-group")
+					label(for="nombre") Nombre
+					input(type="text", name="nombre", placeholder="Escribe el nombre", id="id", class="form-control")
+				div
+					label(for="descripcion") Descripcion
+					input(type="text", name="descripcion", placeholder="Descripcion", id="descripcion", class="form-control")
+				div
+					label(for="edad") Edad
+					input(type="number", name="edad", placeholder="Edad",
+					id="edad", class="form-control")
+				div
+					input(type="submit" class="btn btn-info" value="Guardar")

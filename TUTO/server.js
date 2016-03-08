@@ -74,7 +74,7 @@ app.delete('/api/todos/:todo', function(req, res) {
 });
 //TODO
 //UPDATE un TODO específico y cargamos la lista de nuevo.
-app.update('/api/todos/:todo', function(req, res) {  
+/*app.update('/api/todos/:todo', function(req, res) {  
 Todo.update({
         _id: req,todo
     }, function(err, todo) {
@@ -91,7 +91,7 @@ Todo.update({
 
     })
 });
-
+*/
 // Carga una vista HTML simple donde irá nuestra Single App Page
 // Angular Manejará el Frontend
 app.get('*', function(req, res) {  
